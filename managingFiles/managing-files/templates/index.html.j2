@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- CHANGE_ME -->
+<!-- {{ ansible_managed }} -->
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -9,20 +9,20 @@
   </style>
 </head>
 <body>
-  <h1><!-- CHANGE_ME --></h1>
+  <h1>{{ ansible_facts.hostname }}</h1>
 
   <dl>
     <dt>OS</dt>
-    <dd><!-- CHANGE_ME --></dd>
+    <dd>{{ ansible_facts.os_name }}</dd>
 
     <dt>Memory</dt>
-    <dd><!-- CHANGE_ME --></dd>
+    <dd>{{ ansible_facts.memtotal_mb }}</dd>
 
     <dt>Processor vCPUs</dt>
-    <dd><!-- CHANGE_ME --></dd>
+    <dd>{{ ansible_facts.processor_vcpus }}</dd>
 
     <dt>Processor Cores</dt>
-    <dd><!-- CHANGE_ME --></dd>
+    <dd>{{ ansible_facts.processor_cores }}</dd>
   </dl>
 </body>
 </html>
